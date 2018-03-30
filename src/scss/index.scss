@@ -1,0 +1,47 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: center;
+
+  .tabs-wrapper {
+    flex-direction: row;
+  }
+
+  span {
+    color: lightskyblue;
+    cursor: pointer;
+    margin-right: 15px;
+    font-family: sans-serif;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  span.active {
+    color: darkblue;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
+button {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.content-wrapper.reverse {
+  flex-direction: column-reverse;
+}
